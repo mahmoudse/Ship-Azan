@@ -12,7 +12,7 @@ This projects uses a python script which automatically calculates [adhan](https:
 1. Install git: Go to raspberry pi terminal (command line interface) and install `git`
   * `$ sudo apt-get install git`
 2. Clone repo: Clone this repository on your raspberry pi in your `home` directory. (Tip: run `$ cd ~` to go to your home directory)
-  * `$ git clone git@github.com:achaudhry/adhan.git`
+  * `$ git clone https://github.com/mahmoudse/Ship-Azan.git`
   * After doing that you should see an `adhan` direcotry in your `home` directory. 
 3. Go into `adhan` directory: `$cd adhan`
 4. Open `updateAzaanTimers.py` in your favorite editor. For instance, `nano` is a simple one: `$ nano updateAzaanTimers.py`
