@@ -20,13 +20,14 @@ strJobComment = 'rpiAdhanClockJob'
 
 #Set latitude and longitude here
 #--------------------
-lat = 42.288788
-long = -71.551678
+lat = 31.261531
+long = 32.305913
+
 
 #Set calculation method, utcOffset and dst here
 #By default system timezone will be used
 #--------------------
-PT.setMethod('ISNA')
+PT.setMethod('Egypt')
 utcOffset = -(time.timezone/3600)
 isDst = time.localtime().tm_isdst
 
