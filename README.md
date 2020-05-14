@@ -1,5 +1,6 @@
-# Raspberry Pi Adhan Clock
+# Raspberry Pi Ship Azan 
 This projects uses a python script which automatically calculates [adhan](https://en.wikipedia.org/wiki/Adhan) times every day and plays all five adhans at their scheduled time using cron. 
+Azan Sound will be public via Public Address on the vessel 
 
 ## Prerequisites
 1. Raspberry Pi running Raspbian
