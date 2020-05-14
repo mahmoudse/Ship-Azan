@@ -14,7 +14,7 @@ time.sleep(3) # Sleep for 3 seconds
 print("Delay")
 
 GPIO.output(RELAIS_1_GPIO, GPIO.LOW) # out
-os.system('omxplayer -o local /home/pi/vesselazan/audio/file.mp3 > /dev/null 2>&1')
+os.system('omxplayer -o local /home/pi/vesselazan/audio/Adhan-Makkah.mp3 > /dev/null 2>&1')
 print("End")
 GPIO.output(RELAIS_1_GPIO, GPIO.HIGH) # on
 
