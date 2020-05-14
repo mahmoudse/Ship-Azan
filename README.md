@@ -57,9 +57,9 @@ If you look at the last few lines, you'll see that 5 adhan times have been sched
 VOILA! You're done!! Plug in your speakers and enjoy!
 
 ## Tips:
-* 'crontab -e' to modify cornjob file
-1. You can see your currently scheduled jobs by running `crontab -l`
-2. The output of the job that runs at 1am every night is being captured in `/home/pi/adhan/adhan.log`. This way you can keep track of all successful runs and any potential issues. This file will be truncated at midnight on the forst day of each month. To view the output type `$ cat /home/pi/vesselazan/adhan.log`
+*. 'crontab -e' to modify cronjob file
+*. You can see your currently scheduled jobs by running `crontab -l`
+*. The output of the job that runs at 1am every night is being captured in `/home/pi/adhan/adhan.log`. This way you can keep track of all successful runs and any potential issues. This file will be truncated at midnight on the forst day of each month. To view the output type `$ cat /home/pi/vesselazan/adhan.log`
 
 ### Credits
 I have made modifications / bug fixes but I've used the following as starting point:
