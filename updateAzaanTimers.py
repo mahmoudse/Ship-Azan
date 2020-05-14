@@ -13,10 +13,10 @@ system_cron = CronTab(user='pi')
 
 now = datetime.datetime.now()
 strPlayFajrAzaanMP3Command = 'omxplayer -o local /home/pi/Ship-Azan/Adhan-fajr.mp3 > /dev/null 2>&1'
-strPlayAzaanMP3Command = 'omxplayer -o local /home/pi/Ship-Azan/Adhan-Makkah.mp3 > /dev/null 2>&1'
+strPlayAzaanMP3Command = 'sudo python /home/pi/Ship-Azan/play/azan.py'
 strUpdateCommand = 'python /home/pi/Ship-Azan/updateAzaanTimers.py >> /home/pi/adhan/adhan.log 2>&1'
 strClearLogsCommand = 'truncate -s 0 /home/pi/Ship-Azan/adhan.log 2>&1'
-strJobComment = 'rpiAdhanClockJob'
+strJobComment = 'ShipAzanClockJob'
 
 #Set latitude and longitude here
 #--------------------
