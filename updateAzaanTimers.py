@@ -3,7 +3,7 @@
 import datetime
 import time
 import sys
-sys.path.insert(0, '/home/pi/adhan/crontab')
+sys.path.insert(0, '/home/pi/Ship-Azan/crontab')
 
 from praytimes import PrayTimes
 PT = PrayTimes() 
@@ -12,10 +12,10 @@ from crontab import CronTab
 system_cron = CronTab(user='pi')
 
 now = datetime.datetime.now()
-strPlayFajrAzaanMP3Command = 'omxplayer -o local /home/pi/adhan/Adhan-fajr.mp3 > /dev/null 2>&1'
-strPlayAzaanMP3Command = 'omxplayer -o local /home/pi/adhan/Adhan-Makkah.mp3 > /dev/null 2>&1'
-strUpdateCommand = 'python /home/pi/adhan/updateAzaanTimers.py >> /home/pi/adhan/adhan.log 2>&1'
-strClearLogsCommand = 'truncate -s 0 /home/pi/adhan/adhan.log 2>&1'
+strPlayFajrAzaanMP3Command = 'omxplayer -o local /home/pi/Ship-Azan/Adhan-fajr.mp3 > /dev/null 2>&1'
+strPlayAzaanMP3Command = 'omxplayer -o local /home/pi/Ship-Azan/Adhan-Makkah.mp3 > /dev/null 2>&1'
+strUpdateCommand = 'python /home/pi/Ship-Azan/updateAzaanTimers.py >> /home/pi/adhan/adhan.log 2>&1'
+strClearLogsCommand = 'truncate -s 0 /home/pi/Ship-Azan/adhan.log 2>&1'
 strJobComment = 'rpiAdhanClockJob'
 
 #Set latitude and longitude here
