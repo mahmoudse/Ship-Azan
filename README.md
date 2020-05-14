@@ -15,7 +15,7 @@ Azan Sound will be public via Public Address on the vessel
 2. Clone repo: Clone this repository on your raspberry pi in your `home` directory. (Tip: run `$ cd ~` to go to your home directory)
   * `$ git clone https://github.com/mahmoudse/vesselazan.git`
   * After doing that you should see an `adhan` direcotry in your `home` directory. 
-3. Go into `adhan` directory: `$cd adhan`
+3. Go into `vesselazan` directory: `$cd vesselazan`
 4. Open `updateAzaanTimers.py` in your favorite editor. For instance, `nano` is a simple one: `$ nano updateAzaanTimers.py`
 
 ## Configuration
