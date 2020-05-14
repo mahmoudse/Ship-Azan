@@ -37,19 +37,19 @@ Save your changes by pressing `Control X` and then `Y`.
 ## Run it for the first time
 Run this command `$ python /home/pi/vesselazan/updateAzaanTimers.py`. If everythig worked, your output will look something like this:
 ```
-05:51
-11:52
-14:11
-16:30
-17:53
-51 5 * * * omxplayer -o local /home/pi/adhan/Adhan-fajr.mp3 > /dev/null 2>&1 # rpiAdhanClockJob
-52 11 * * * omxplayer -o local /home/pi/adhan/Adhan-Makkah.mp3 > /dev/null 2>&1 # rpiAdhanClockJob
-11 14 * * * omxplayer -o local /home/pi/adhan/Adhan-Makkah.mp3 > /dev/null 2>&1 # rpiAdhanClockJob
-30 16 * * * omxplayer -o local /home/pi/adhan/Adhan-Makkah.mp3 > /dev/null 2>&1 # rpiAdhanClockJob
-53 17 * * * omxplayer -o local /home/pi/adhan/Adhan-Makkah.mp3 > /dev/null 2>&1 # rpiAdhanClockJob
-0 1 * * * python /home/pi/adhan/updateAzaanTimers.py >> /home/pi/adhan/adhan.log 2>&1 # rpiAdhanClockJob
-@monthly truncate -s 0 /home/pi/adhan/adhan.log 2>&1 # rpiAdhanClockJob
-Script execution finished at: 2017-01-06 21:22:31.512667
+03:14
+11:47
+15:26
+18:39
+20:09
+14 3 * * * omxplayer -o local /home/pi/vesselazan/audio/Adhan-fajr.mp3 > /dev/null 2>&1 # VesselAzanClockJob
+47 11 * * * sudo python /home/pi/vesselazan/play/azan.py # VesselAzanClockJob
+26 15 * * * sudo python /home/pi/vesselazan/play/azan.py # VesselAzanClockJob
+39 18 * * * sudo python /home/pi/vesselazan/play/azan.py # VesselAzanClockJob
+9 20 * * * sudo python /home/pi/vesselazan/play/azan.py # VesselAzanClockJob
+15 3 * * * python /home/pi/vesselazan/updateAzaanTimers.py >> /home/pi/vesselazan/adhan.log 2>&1 # VesselAzanClockJob
+@monthly truncate -s 0 /home/pi/vesselazan/adhan.log 2>&1 # VesselAzanClockJob
+Script execution finished at: 2020-05-14 23:05:58.833252
 ```
 
 If you look at the last few lines, you'll see that 5 adhan times have been scheduled. Then there is another line at the end which makes sure that at 1am every day the same script will run and calculate adhan times for that day. And lastly, there is a line to clear logs on a monthly basis so that your log file doesn't grow too big.
