@@ -24,12 +24,12 @@ The original python script is super configurable. Please see the [manual](http:/
 ```
 #Set latitude and longitude here
 #--------------------
-lat = 42.3601
-long = -71.0589
+lat = 31.261531
+long = 32.305913
 ```
 * Set adhan time [calculation method](http://praytimes.org/manual#Set_Calculation_Method). Modify the following line:
 ```
-PT.setMethod('ISNA')
+PT.setMethod('Egypt')
 ```
 Save your changes by pressing `Control X` and then `Y`.
 
