@@ -13,7 +13,7 @@ Azan Sound will be public via Public Address on the vessel
 1. Install git: Go to raspberry pi terminal (command line interface) and install `git`
   * `$ sudo apt-get install git`
 2. Clone repo: Clone this repository on your raspberry pi in your `home` directory. (Tip: run `$ cd ~` to go to your home directory)
-  * `$ git clone https://github.com/mahmoudse/Ship-Azan.git`
+  * `$ git clone https://github.com/mahmoudse/vesselazan.git`
   * After doing that you should see an `adhan` direcotry in your `home` directory. 
 3. Go into `adhan` directory: `$cd adhan`
 4. Open `updateAzaanTimers.py` in your favorite editor. For instance, `nano` is a simple one: `$ nano updateAzaanTimers.py`
@@ -35,7 +35,7 @@ PT.setMethod('Egypt')
 Save your changes by pressing `Control X` and then `Y`.
 
 ## Run it for the first time
-Run this command `$ python /home/pi/adhan/updateAzaanTimers.py`. If everythig worked, your output will look something like this:
+Run this command `$ python /home/pi/vesselazan/updateAzaanTimers.py`. If everythig worked, your output will look something like this:
 ```
 05:51
 11:52
@@ -58,7 +58,7 @@ VOILA! You're done!! Plug in your speakers and enjoy!
 
 ## Tips:
 1. You can see your currently scheduled jobs by running `crontab -l`
-2. The output of the job that runs at 1am every night is being captured in `/home/pi/adhan/adhan.log`. This way you can keep track of all successful runs and any potential issues. This file will be truncated at midnight on the forst day of each month. To view the output type `$ cat /home/pi/adhan/adhan.log`
+2. The output of the job that runs at 1am every night is being captured in `/home/pi/adhan/adhan.log`. This way you can keep track of all successful runs and any potential issues. This file will be truncated at midnight on the forst day of each month. To view the output type `$ cat /home/pi/vesselazan/adhan.log`
 
 ### Credits
 I have made modifications / bug fixes but I've used the following as starting point:
